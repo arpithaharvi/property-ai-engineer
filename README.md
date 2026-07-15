@@ -32,6 +32,29 @@ Property valuers in India spend **3-4 hours per report** manually:
 | 💾 Persistence       | SQLite database — results saved between sessions               |
 | 📥 Reports           | One-click Excel download                                        |
 
+Reading scanned sale deeds (often in Kannada)
+
+- Extracting owner details, survey numbers, boundaries
+- Checking compliance for bank submission
+- Scoring investment risk
+
+**This system reduces that to 15-20 minutes** — automatically.
+
+---
+
+## ✅ What it does
+
+| Feature              | Details                                                         |
+| -------------------- | --------------------------------------------------------------- |
+| 📄 PDF Intelligence  | Reads digital + scanned PDFs automatically                      |
+| 🌐 Language Support  | English + Kannada documents                                     |
+| 🏗️ Property Types  | Residential, Flat, Commercial, Industrial, IT Park, Vacant Site |
+| 🔍 Document Search   | Ask questions across multiple uploaded reports                  |
+| ✅ Validation Engine | Flags missing fields before bank submission                     |
+| 📊 Risk Analysis     | Investment score + BUY/HOLD/SELL recommendation                 |
+| 💾 Persistence       | SQLite database — results saved between sessions               |
+| 📥 Reports           | One-click Excel download                                        |
+
 ---
 
 ## 🏦 Real domain use cases
@@ -51,6 +74,7 @@ LLM:            Groq LLaMA 3.3 70B (free API)
 RAG Pipeline:   LangChain + ChromaDB + HuggingFace Embeddings
 Validation:     Rule-based engine (deterministic, auditable)
 Database:       SQLite (Python's built-in sqlite3 module)
+Database:       SQLite via SQLAlchemy
 UI:             Streamlit (multi-page)
 Cost:           ₹0 — 100% free stack
 ```
@@ -79,13 +103,16 @@ Month_1_AI_RAG_Project/
     └── properties.db       — SQLite database (gitignored)
 ```
 
-**Note:** `data/` and `database/` folders are created automatically on first run — they won't exist right after cloning.
+Note: data/ and database/ folders are created automatically on first run — they won't exist right after cloning.
+
+---
 
 ## 🚀 How to run locally
 
 ```bash
 # 1. Clone the repository
 git clone https://github.com/arpithaharvi/property-ai-engineer.git
+git clone https://github.com/YOUR_USERNAME/property-ai-engineer.git
 cd property-ai-engineer/Month_1_AI_RAG_Project
 
 # 2. Create virtual environment
@@ -108,7 +135,7 @@ streamlit run app.py
 
 ## 🔑 Environment variables
 
-Create a `.env` file with:
+Create a `.env` file with
 
 ```
 GROQ_API_KEY=your_groq_api_key_here

@@ -12,6 +12,7 @@ langchain-text-splitters==0.3.8
 
 # Vector database
 chromadb==0.5.23
+pysqlite3-binary
 
 # Embeddings
 sentence-transformers==3.3.1

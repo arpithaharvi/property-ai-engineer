@@ -12,7 +12,10 @@
 #   📊 Risk Analysis     — PDF + Excel risk scoring (Week 1 + Week 4)
 #   📋 Reports           — full history from database + downloads
 # ============================================================
-
+# --- Streamlit Cloud fix: ChromaDB needs a newer SQLite than Debian ships ---
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import json
 import os
 import tempfile
@@ -38,7 +41,10 @@ from modules.database import (
     get_all_documents,
     get_all_excel_batches
 )
-
+# --- Streamlit Cloud fix: bridge st.secrets to environment variables ---
+if "GROQ_API_KEY" in st.secrets:
+    os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
+    
 # ── Page config — must be first Streamlit command ──
 st.set_page_config(
     page_title="Property AI Engineer",

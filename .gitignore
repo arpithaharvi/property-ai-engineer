@@ -1,0 +1,14 @@
+.env
+venv/
+__pycache__/
+*.pyc
+data/
+database/
+property_rag_db/
+week3_multi_property_db/
+reports/
+*.db
+.DS_Store
+Thumbs.db
+modules/Screenshot*
+app1.py

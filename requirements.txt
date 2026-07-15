@@ -1,0 +1,37 @@
+# Property AI Engineer — Requirements
+# Pin exact versions to ensure everything works together
+
+# LangChain ecosystem
+langchain==0.3.25
+langchain-core==0.3.65
+langchain-community==0.3.24
+langchain-huggingface==0.1.2
+langchain-chroma==0.1.4
+langchain-groq==0.2.4
+langchain-text-splitters==0.3.8
+
+# Vector database
+chromadb==0.5.23
+
+# Embeddings
+sentence-transformers==3.3.1
+
+# PDF processing
+pymupdf==1.24.14
+pypdf==5.1.0
+
+# Image processing
+pillow==11.0.0
+
+# Groq API
+groq==0.13.0
+
+# Data processing
+pandas==2.2.3
+openpyxl==3.1.5
+
+# Environment variables
+python-dotenv==1.0.1
+
+# Web UI
+streamlit==1.40.2

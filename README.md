@@ -34,5 +34,5 @@ https://console.groq.com
 Residential, Flat, Commercial, Industrial, IT Park, Vacant Site
 
 ## Built by
-Property valuation professional (2 years, Karnataka banks)
+Property valuation professional (4 years, Karnataka banks)
 combining domain expertise with Generative AI engineering.

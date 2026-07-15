@@ -130,7 +130,7 @@ Get a free API key at: https://console.groq.com
 
 ## 👩‍💼 About
 
-Built by a property valuation professional with 2 years of bank
+Built by a property valuation professional with 4 years of bank
 valuation experience, combining domain expertise with AI engineering.
 
 - **Domain:** Property valuation for banks and NBFCs (Karnataka)

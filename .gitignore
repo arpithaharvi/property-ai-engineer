@@ -12,3 +12,4 @@ reports/
 Thumbs.db
 modules/Screenshot*
 app1.py
+.streamlit/secrets.toml

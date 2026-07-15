@@ -13,9 +13,9 @@
 #   📋 Reports           — full history from database + downloads
 # ============================================================
 # --- Streamlit Cloud fix: ChromaDB needs a newer SQLite than Debian ships ---
-__import__('pysqlite3')
+__import__('sqlite3')
 import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+sys.modules['sqlite3'] = sys.modules.pop('sqlite3')
 import json
 import os
 import tempfile
@@ -42,8 +42,11 @@ from modules.database import (
     get_all_excel_batches
 )
 # --- Streamlit Cloud fix: bridge st.secrets to environment variables ---
-if "GROQ_API_KEY" in st.secrets:
-    os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
+try:
+    if "GROQ_API_KEY" in st.secrets:
+        os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
+except Exception:
+    pass  # running locally with .env — that's fine
     
 # ── Page config — must be first Streamlit command ──
 st.set_page_config(

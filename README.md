@@ -5,6 +5,11 @@
 > extracts structured data, validates for bank submission, and scores investment risk.
 
 ---
+## 🚀 Live Demo
+
+👉 [**Try the app live**](https://property-ai-engineer-mnkywzlueipbndsahd4u3w.streamlit.app/)
+
+---
 
 ## 🎯 Problem this solves
 

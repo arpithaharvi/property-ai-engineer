@@ -178,3 +178,5 @@ valuation experience, combining domain expertise with AI engineering.
 - `.env` file is gitignored — never commit your API key
 - `data/` folder is gitignored — uploaded PDFs stay local
 - `database/properties.db` is gitignored — contains client data
+## Month 2 Repository
+https://github.com/arpithaharvi/property-ai-agents
